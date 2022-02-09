@@ -29,8 +29,8 @@ const Resume = ({...otherProps}) => {
         { id: 2, tools: "VS Code", level: 90, years: 2020 },
         { id: 3, tools: "SAP LE", level: 80, years: 2013 },
         { id: 4, tools: "SSMS", level: 70, years: 2021 },
-        { id: 5, tools: "Power BI", level: 70, years: 2021 },
-        { id: 6, tools: "Tailwind", level: 80, years: 2021 },
+        { id: 5, tools: "Tailwind", level: 80, years: 2021 },
+        { id: 6, tools: "Power BI", level: 70, years: 2021 },
         { id: 7, tools: "SQL Server", level: 70, years: 2021 },
         { id: 8, tools: "React.JS", level: 50, years: 2021 },
         { id: 9, tools: "Git Bash", level: 50, years: 2021 }
