@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import {Link} from 'react-router-dom';
 import emailjs from '@emailjs/browser';
+import { motion } from "framer-motion";
 
 const Result = () => {
     return (
@@ -8,9 +9,15 @@ const Result = () => {
             Your message has been succesfully sent.
         </p>
     )
-}
+    }
+const verifier = process.env.REACT_APP_EMAILJS_API
 
 const Contacts = ({...otherProps}) => {
+
+    const [modalOpen, setModalOpen] = useState(false);
+
+    const close = () => setModalOpen(false);
+    const open = () => setModalOpen(true);
 
     const [result, showResult] = useState(false);
 
@@ -19,7 +26,7 @@ const Contacts = ({...otherProps}) => {
     const sendEmail = (e) => {
         e.preventDefault();
     
-        emailjs.sendForm('service_fjsq0jv', 'template_jtbogma', form.current, 'user_FeMBBQ6DnYfXchet3UB1j')
+        emailjs.sendForm('service_fjsq0jv', 'template_jtbogma', form.current, verifier)
           .then((result) => {
               console.log(result.text);
           }, (error) => {
@@ -30,21 +37,21 @@ const Contacts = ({...otherProps}) => {
         }
               
     return (
-        <div>
+        <section>
             <div className="absolute z-0 pt-56 pb-36 md:w-1/2 flex-wrap">
-                <div className="text-xl text-gray-500 font-body flex ml-10">Data Analyst, Web Developer</div>
-                <div  className="text-6xl md:text-7xl text-gray-600 font-body flex ml-10">I AM MICHAL WARAKOMSKI</div>
+                <h2 className="text-xl text-gray-500 font-body flex ml-10">Data Analyst, Web Developer</h2>
+                <h1  className="text-6xl md:text-7xl text-gray-600 font-body flex ml-10">I AM MICHAL WARAKOMSKI</h1>
             </div>  
-            <div className="z-40 animation flex relative w-full  h-screen md:h-max">
-                <div className="animation2 hidden md:block md:pt-4 md:pl-10 md:fixed md:visible md:w-44 md:h-full md:bg-white">
+            <div className="z-40 animationSlideInPage flex relative w-full  h-screen md:h-max">
+                <div className="animationLogo hidden md:block md:pt-4 md:pl-10 md:fixed md:visible md:w-44 md:h-full md:bg-white">
                     <span className="md:visible pl-5 font-kolker md:text-4xl tracking-tight text-gray-600">Mike</span>
                     <span className="md:visible font-kolker md:text-4xl text-amber">W.</span>
                 </div>
                 <div className=" md:ml-44 bg-amber flex-col shadow-xl h-full md:w-4/5 w-full">
-                        <div className="animation2 w-full">
-                            <div className="pl-5 text-gray-400 font-kolker text-8xl flex justify-center pt-2  ">
+                        <div className="animationLogo w-full">
+                            <h1 className="pl-5 text-gray-400 font-kolker text-8xl flex justify-center pt-2  ">
                                 CONTACT
-                            </div>
+                            </h1>
                             <div className="flex justify-center md:mb-5 md:mt-5 mb-2 w-full">
                                 <div className="flex justify-center w-max font-kolker  text-gray-600  p-10 pb-5 md:space-y-4 md:mt-5 h-auto shadow-lg">
                                     <form ref={form} onSubmit={sendEmail}>
@@ -83,17 +90,21 @@ const Contacts = ({...otherProps}) => {
                     </div>                              
             <div className="md:visible md:w-1/12 bg-white">
             </div>        
-            <div className="animation2 justify-end w-full md:flex fixed md:top-0 md:right-0 md:w-36">         
+            <div className="animationLogo justify-end w-full md:flex fixed md:top-0 md:right-0 md:w-36">         
                 <div  className="flex justify-end text-gray-400 font-body md:text-4xl text-3xl pt-5 pr-4 md:pr-14 md:bg-white"> 
-                    <button className="button">
-                        <Link to='/'>
-                            X
-                        </Link>
-                    </button>    
+                <motion.button
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    className="save-button"
+                    onClick={() => (modalOpen ? close() : open())}>
+                    <Link to='/'>
+                        X
+                    </Link>
+                    </motion.button> 
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     )
 }
 

@@ -15,11 +15,27 @@
   }
 }
 
-.animation {
-  animation: animation-load 1000ms ease-in;
+.menuUnhide {
+  margin-top: -30vh;
+  margin-left: 40vw;
+  transform: scale(0);
+  transition: all 0.5s ease-in-out;
+  opacity: 0.4;
 }
 
-@keyframes animation-load {
+.menuUnhide.open {
+  margin-top: 0vh;
+  margin-left: 0vw;
+  transform: scale(1);
+  opacity: 1;
+}
+
+
+.animationSlideInPage {
+  animation: animationSlideInPage-load 1000ms ease-in-out;
+}
+
+@keyframes animationSlideInPage-load {
   0% {
     position:fixed;
     overflow:hidden;
@@ -41,14 +57,15 @@
   }
 }
 
-.animation2 {
-  animation: animation2-load 300ms ease-in;
+
+.animationLogo {
+  animation: animationLogo-load 300ms ease-in;
   opacity:0;
   animation-fill-mode: forwards;
   animation-delay: 1000ms
 }
 
-@keyframes animation2-load {
+@keyframes animationLogo-load {
   from {
     opacity:0
   }
@@ -57,14 +74,14 @@
   }
 }
 
-.animation3 {
-  animation: animation3-load 800ms ease-in;
+.animationOpacity {
+  animation: animationOpacity-load 800ms ease-in;
   opacity:0;
   animation-fill-mode: forwards;
   animation-delay: 200ms
 }
 
-@keyframes animation3-load {
+@keyframes animationOpacity-load {
   from {
     opacity:0
   }
@@ -73,14 +90,14 @@
   }
 }
 
-.animation4 {
-  animation: animation3-load 800ms ease-in;
+.animationImage {
+  animation: animationImage-load 800ms ease-in;
   opacity:0;
   animation-fill-mode: forwards;
   animation-delay: 600ms
 }
 
-@keyframes animation4-load {
+@keyframes animationImage-load {
   from {
     opacity:0
   }
@@ -111,45 +128,6 @@
   }
 }
 
-.width1 {
-  width: 10%;
-}
-
-.width2 {
-  width: 20%;
-}
-
-.width3 {
-  width: 30%;
-}
-
-.width4 {
-  width: 40%;
-}
-
-.width5 {
-  width: 50%;
-}
-
-.width6 {
-  width: 60%;
-}
-
-.width7 {
-  width: 70%;
-}
-
-.width8 {
-  width: 80%;
-}
-
-.width9 {
-  width: 90%;
-}
-
-.width10 {
-  width: 100%;
-}
 
 .button:active {
   transform: translateY(4px);

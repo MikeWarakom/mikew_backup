@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Style.css';
 import { useLocation, Routes, Route  } from 'react-router-dom';
 import HomePage from '../pages/HomePage'
-import Header from './Header';
+import Navbar from './Navbar';
 import AboutMe from '../pages/AboutMe';
 import Projects from '../pages/Projects';
 import Resume from '../pages/Resume';
@@ -29,8 +29,8 @@ const AnimatedRoutes = () => {
 
   return ( 
 
-        <div className=" justify-between ">
-                  <Header/>
+        <div>
+                  <Navbar/>
                 <AnimatePresence>
                 <Routes location={location} key={location.pathname}>
                   <Route path='/' element={<HomePage />}/>

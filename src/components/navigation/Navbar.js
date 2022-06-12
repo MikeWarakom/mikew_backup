@@ -1,9 +1,8 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 
-const Navigation = () => {
+const Navbar = () => {
     const [Active, setActive ] = useState(false);
 
     const onClick = () => {
@@ -48,7 +47,7 @@ const Navigation = () => {
                         </div>
                     </div>
                     <div className="grid relative w-full pr-4">
-                        <div className={`${!Active && 'hidden'} md:hidden shadow-lg justify-self-end w-96 h-full`}>
+                        <div className={`${!Active && 'open'} menuUnhide md:hidden shadow-lg justify-self-end w-96 h-full`}>
                             <div className="flex-col shadow-xl bg-white h-full">
                             <Link to='/aboutme'>
                                 <button className="block w-full font-body text-6xl border-gray-300 text-gray-600 mt-0 pt-10 px-4 py-6 transition duration-500 ease-in-out  hover:text-blue-500 transform hover:-translate-y-1 hover:scale-105 ...">
@@ -77,4 +76,4 @@ const Navigation = () => {
         )
 }
 
-export default Navigation;
+export default Navbar;

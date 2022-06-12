@@ -4,7 +4,7 @@ import AnimatedRoutes from "./components/navigation/AnimatedRoutes";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <AnimatedRoutes />
     </BrowserRouter>
   );
