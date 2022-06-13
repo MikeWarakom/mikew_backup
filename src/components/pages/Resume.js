@@ -17,9 +17,10 @@ const Resume = ({...otherProps}) => {
     const mySkills = [
         { id: 1, skills: "VBA", level: 100, years: 2017 },
         { id: 2, skills: "SQL", level: 90, years: 2020 },
-        { id: 3, skills: "HTML & CSS", level: 70, years: 2021 },
-        { id: 4, skills: "JavaScript", level: 65, years: 2021  },
-        { id: 5, skills: "Python", level: 20, years: 2020}
+        { id: 3, skills: "HTML & CSS", level: 80, years: 2021 },
+        { id: 4, skills: "JavaScript", level: 80, years: 2021  },
+        { id: 5, skills: "TypeScript", level: 40, years: 2021  },
+        { id: 6, skills: "Python", level: 20, years: 2020}
     ];
 
     const myTools = [
@@ -90,7 +91,7 @@ const Resume = ({...otherProps}) => {
                             </h1>
                             <Zoom>
                             <div className="flex gap-2 ml-2 md:mb-10 md:mt-10 mb-2">
-                                <div className="md:w-2/3 w-56 font-kolker text-gray-600 md:p-10 py-10 md:mt-20  h-auto shadow-lg">
+                                <div className="flex flex-col md:w-2/3 w-56 font-kolker text-gray-600 md:p-10 py-10 md:mt-20  h-auto shadow-lg">
                                     <label className="md:text-4xl text-3xl pl-4 md: md:pl-16">
                                         2013-Now
                                     </label>
@@ -118,7 +119,7 @@ const Resume = ({...otherProps}) => {
                                                     {skills}
                                                 </p>
                                             <div className="mt-1 md:mt-2 mr-2 md:mr-2 bg-gray-500 h-5 md:h-10 shadow-xl w-48 md:w-72">
-                                                <div style={barWidth(level)} className="bg-blue-500 text-2xl md:font-medium text-gray-400 text-center md:p-2 leading-none h-full"> {level}% {experienceYears(years, level)}</div>
+                                                <div style={barWidth(level)} className="bg-blue-500 text-2xl md:font-medium text-gray-400 text-center md:pt-2 leading-none h-full"> {level}% {experienceYears(years, level)}</div>
                                                 </div>
                                             </div>                          
                                         </div>

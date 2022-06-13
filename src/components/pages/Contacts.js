@@ -10,7 +10,9 @@ const Result = () => {
         </p>
     )
     }
-const verifier = process.env.REACT_APP_EMAILJS_API
+    const verifier = process.env.REACT_APP_EMAILJS_API
+    const template = process.env.REACT_APP_EMAILJS_TEMPLATE
+    const service = process.env.REACT_APP_EMAILJS_SERVICE
 
 const Contacts = ({...otherProps}) => {
 
@@ -26,7 +28,7 @@ const Contacts = ({...otherProps}) => {
     const sendEmail = (e) => {
         e.preventDefault();
     
-        emailjs.sendForm('service_fjsq0jv', 'template_jtbogma', form.current, verifier)
+        emailjs.sendForm(service, template, form.current, verifier)
           .then((result) => {
               console.log(result.text);
           }, (error) => {
