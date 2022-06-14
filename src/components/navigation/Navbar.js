@@ -47,25 +47,25 @@ const Navbar = () => {
                         </div>
                     </div>
                     <div className="grid relative w-full pr-4">
-                        <div className={`${Active && 'open'} menuUnhide md:hidden shadow-lg justify-self-end w-96 h-full`}>
+                        <div className={`${Active && 'open'} menuUnhide md:hidden shadow-lg justify-self-end w-64 h-full`}>
                             <div className="flex-col shadow-xl bg-white h-full">
                             <Link to='/aboutme'>
-                                <button className="block w-full font-body text-5xl border-gray-300 text-gray-600 mt-0 pt-10 px-4 py-6 transition duration-500 ease-in-out  hover:text-blue-500 transform hover:-translate-y-1 hover:scale-105 ...">
+                                <button className="block w-full font-body text-5xl border-gray-300 text-gray-600 mt-0 pt-10 px-2 py-4 transition duration-500 ease-in-out  hover:text-blue-500 transform hover:-translate-y-1 hover:scale-105 ...">
                                     About me
                                 </button>
                             </Link>    
                             <Link to='/projects'>
-                                <button className="block w-full font-body text-5xl text-gray-600 mt-0 px-4 py-6 transition duration-500 ease-in-out  hover:text-blue-500 transform hover:-translate-y-1 hover:scale-105 ...">
+                                <button className="block w-full font-body text-5xl text-gray-600 mt-0 px-2 py-4 transition duration-500 ease-in-out  hover:text-blue-500 transform hover:-translate-y-1 hover:scale-105 ...">
                                     Projects
                                 </button>
                             </Link>
                             <Link to='/resume'>
-                                <button className="block w-full font-body text-5xl text-gray-600 mt-0 px-4 py-6 transition duration-500 ease-in-out hover:text-blue-500 transform hover:-translate-y-1 hover:scale-105 ...">
+                                <button className="block w-full font-body text-5xl text-gray-600 mt-0 px-2 py-4 transition duration-500 ease-in-out hover:text-blue-500 transform hover:-translate-y-1 hover:scale-105 ...">
                                     Work
                                 </button>
                             </Link>
                             <Link to='/contacts'>
-                                <button className="block w-full font-body text-5xl text-gray-600 mt-0 px-4 py-6 transition duration-500 ease-in-out  hover:text-blue-500 transform hover:-translate-y-1 hover:scale-105">
+                                <button className="block w-full font-body text-5xl text-gray-600 mt-0 px-2 py-4 transition duration-500 ease-in-out  hover:text-blue-500 transform hover:-translate-y-1 hover:scale-105">
                                     Contact
                                 </button>
                             </Link>
