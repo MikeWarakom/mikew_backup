@@ -19,7 +19,7 @@ const Projects = ({...otherProps}) => {
 
     return (
         <section>
-            <div className="absolute z-0 pt-56 pb-36 md:w-1/2 flex-wrap">
+            <div className="md:flex hidden absolute z-0 pt-56 pb-36 md:w-1/2 flex-wrap">
                 <h2 className="text-xl text-gray-500 font-body flex ml-10">Data Analyst, Web Developer</h2>
                 <h1  className="text-6xl md:text-7xl text-gray-600 font-body flex ml-10">I AM MICHAL WARAKOMSKI</h1>
             </div>  
@@ -28,12 +28,12 @@ const Projects = ({...otherProps}) => {
                     <span className="md:visible pl-5 font-kolker md:text-4xl tracking-tight text-gray-600">Mike</span>
                     <span className="md:visible font-kolker md:text-4xl text-amber">W.</span>
                 </div>
-                <div className=" md:ml-44 bg-amber flex-col shadow-xl h-full md:w-4/5 w-full h-full">
+                <div className=" md:ml-44 bg-amber flex-col shadow-xl md:w-4/5 w-full h-full">
                     <div className="animationLogo w-full h-full">
-                        <h1 className="pl-5 text-gray-400 font-kolker text-8xl flex justify-center pt-2  ">
+                        <h1 className="pl-5 text-gray-400 font-kolker md:text-8xl text-6xl flex justify-center pt-2  ">
                             PROJECTS
                         </h1>
-                        <div className="md:grid md:grid-cols-3 md:m-auto flex-col justify-center md:mb-5 md:mt-5 mb-2 m-10">
+                        <div className="md:grid md:grid-cols-3 md:m-auto flex-col justify-center md:mb-5 md:mt-5 mb-2 md:m-10">
                             {myProjects.map(({ id, name, url, src, alt }) => (
                                 <div key={id} className="animation5 w-auto md:m-4 m-10 font-kolker flex content-center flex-col text-center text-gray-600 p-5 bg-amber h-auto shadow-lg">
                                     <a href={url} > 

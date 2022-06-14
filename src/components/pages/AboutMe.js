@@ -5,13 +5,14 @@ import {Link} from 'react-router-dom';
 const AboutMe = ({...otherProps}) => {
 
     const [modalOpen, setModalOpen] = useState(false);
+    
 
     const close = () => setModalOpen(false);
     const open = () => setModalOpen(true);
 
     return (
             <section>
-                <div className="absolute z-0 pt-56 pb-36 md:w-1/2 flex-wrap">
+                <div className="absolute md:flex hidden z-0 pt-56 pb-36 md:w-1/2 flex-wrap">
                     <h2 className="text-xl text-gray-500 font-body flex ml-10">Data Analyst, Web Developer</h2>
                     <h1  className="text-6xl md:text-7xl text-gray-600 font-body flex ml-10">I AM MICHAL WARAKOMSKI</h1>
                 </div>   
@@ -25,14 +26,14 @@ const AboutMe = ({...otherProps}) => {
                 </div>
                 <div className=" md:ml-44 bg-amber flex-col shadow-xl h-full md:w-4/5 w-full">
                         <div className="animationLogo w-full">
-                            <label className="pl-5 text-gray-400 font-kolker text-8xl flex justify-center pt-2  ">
+                            <label className="pl-5 text-gray-400 font-kolker text-6xl md:text-8xl flex justify-center pt-2  ">
                                 ABOUT ME
                             </label>
                             <div className="flex gap-2 md:mb-5 md:mt-5 mb-2">
-                                <div className="w-2/3 ml-2 font-kolker text-gray-600 p-10 py-10 md:mt-20 h-auto shadow-lg">
+                                <div className="md:block hidden w-2/3 ml-2 font-kolker text-gray-600 p-10 py-10 md:mt-20 h-auto shadow-lg">
                                 <img className="" src="/img/mw2.png" alt="MW" width="450" ></img>     
                                 </div>
-                                <div className="w-full font-kolker  text-gray-600 pl-5 pt-10 pb-10 md:space-y-4 md:mt-20 m-2 h-auto shadow-lg">
+                                <div className=" w-full font-kolker  text-gray-600 pl-5 pt-10 pb-10 md:space-y-4 md:mt-20 m-2 h-auto shadow-lg">
                                     <p className="md:text-2xl text-xl pr-5">
                                         Life is about balance, that is why I am very passionate about technology, It makes our lives easier and better. Someone once said that
                                         everyone should know how to do programming. I want to create something creative and breathtaking in my life, I learn to code
@@ -45,7 +46,7 @@ const AboutMe = ({...otherProps}) => {
                             </div>
                         </div>
                     </div>                                     
-            <div className="md:visible md:w-1/12 bg-white">
+            <div className="md:visible invisible md:w-1/12 bg-white">
             </div>        
             <div className="animationLogo justify-end w-full md:flex fixed md:top-0 md:right-0 md:w-36">         
                 <div  className="flex justify-end text-gray-400 font-body md:text-4xl text-3xl pt-5 pr-4 md:pr-14"> 

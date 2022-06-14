@@ -6,11 +6,12 @@ import { motion } from "framer-motion";
 const Resume = ({...otherProps}) => {
    
     const myWork = [
-        { id: 1, work: "LOGISTICS MANAGEMENT" },
-        { id: 2, work: "DATA MODELING, ANALYSIS & REPORTING" },
-        { id: 3, work: "LIVE DASHBOARDS" },
-        { id: 4, work: "DATA AUTOMATIZATION" },
-        { id: 5, work: "SQL SERVER ADMIN" },
+        { id: 1, work: "SAMSUNG ELECTRONICS" },
+        { id: 2, work: "LOGISTICS MANAGEMENT" },
+        { id: 3, work: "DATA MODELING, ANALYSIS & REPORTING" },
+        { id: 4, work: "LIVE DASHBOARDS" },
+        { id: 5, work: "DATA AUTOMATIZATION" },
+        { id: 6, work: "SQL SERVER ADMIN" },
         
     ];
 
@@ -75,7 +76,7 @@ const Resume = ({...otherProps}) => {
     
     return (
         <section>
-            <div className="absolute z-0 pt-56 pb-36 md:w-1/2 flex-wrap">
+            <div className="md:flex hidden absolute z-0 pt-56 pb-36 md:w-1/2 flex-wrap">
                 <h1 className="text-xl text-gray-500 font-body flex ml-10">Data Analyst, Web Developer</h1>
                 <h1  className="text-6xl md:text-7xl text-gray-600 font-body flex ml-10">I AM MICHAL WARAKOMSKI</h1>
             </div>  
@@ -86,36 +87,33 @@ const Resume = ({...otherProps}) => {
                 </div>
                 <div className=" md:ml-44 bg-amber flex-col shadow-xl h-full md:w-4/5 w-full">
                         <div className="animationLogo w-full">
-                            <h1 className="pl-5 mr-2 text-gray-400 font-kolker text-8xl flex justify-center pt-2  ">
+                            <h1 className="flex md:flex-row flex-col pl-5 mr-2 text-gray-400 font-kolker text-6xl md:text-8xl justify-center pt-2  ">
                                 MY WORK EXPERIENCES
                             </h1>
                             <Zoom>
-                            <div className="flex gap-2 ml-2 md:mb-10 md:mt-10 mb-2">
-                                <div className="flex flex-col md:w-2/3 w-56 font-kolker text-gray-600 md:p-10 py-10 md:mt-20  h-auto shadow-lg">
-                                    <label className="md:text-4xl text-3xl pl-4 md: md:pl-16">
+                            <div className="flex md:flex-row flex-col gap-2 ml-2 md:mb-10 md:mt-10 mb-2">
+                                <div className="flex flex-col md:w-2/3 w-56 font-kolker text-gray-600 md:p-10 pt-10 md:py-10 md:mt-20 md:h-auto md:shadow-lg">
+                                    <label className="text-4xl pl-4 md:pl-16">
                                         2013-Now
-                                    </label>
-                                    <label className="md:text-4xl text-3xl">
-                                        Samsung Electronics
-                                    </label>              
+                                    </label>            
                                 </div>
-                                <div className="w-full font-kolker  text-gray-600 pl-5 mr-2 pt-10 pb-10 md:space-y-4 md:mt-20  h-auto shadow-lg">
+                                <div className="w-full font-kolker  text-gray-600 pl-5 mr-2 md:pt-10 md:pb-10 pb-5 md:space-y-4 md:mt-20  h-auto shadow-lg">
                                     {myWork.map(({ work, id }) => (
-                                    <p className="md:text-6xl text-3xl" key={id}> {work} </p>
+                                    <p className="md:text-6xl text-2xl" key={id}> {work} </p>
                                     ))}
                                 </div>
                             </div>
-                            <div className="flex gap-2 ml-2 md:mb-10 md:mt-10 mb-2">
-                                <div className="md:w-2/3 w-56 font-kolker text-gray-600 md:p-10 md:mt-20  h-auto shadow-lg">
-                                    <label className="md:text-4xl text-3xl pl-4 md: md:pl-16">
+                            <div className="flex md:flex-row flex-col gap-2 ml-2 md:mb-10 md:mt-10 mb-2">
+                                <div className="md:w-2/3 w-56 font-kolker text-gray-600 md:p-10 md:mt-20 pt-10 md:h-auto md:shadow-lg">
+                                    <label className="text-4xl pl-4 md: md:pl-16">
                                         My Skills
                                     </label>
                                 </div>
-                                <div className="w-full font-kolker  text-gray-600 pl-5 mr-2 pt-10 pb-10 md:mt-20 md:space-y-4  h-auto shadow-lg">
+                                <div className="w-full font-kolker  text-gray-600 pl-5 mr-2 md:pt-10 md:pb-10 pb-5 md:mt-20 md:space-y-4  h-auto shadow-lg">
                                     {mySkills.map(({ skills, id, level, years }) => (                
                                         <div key={id}>
                                             <div className="flex justify-between">
-                                                <p className="md:text-6xl text-3xl flex">
+                                                <p className="md:text-6xl text-2xl flex">
                                                     {skills}
                                                 </p>
                                             <div className="mt-1 md:mt-2 mr-2 md:mr-2 bg-gray-500 h-5 md:h-10 shadow-xl w-48 md:w-72">
@@ -126,17 +124,17 @@ const Resume = ({...otherProps}) => {
                                     ))}
                             </div>        
                             </div>
-                            <div className="flex gap-2 ml-2 md:mb-10 md:mt-10 mb-2">
-                                <div className="md:w-2/3 w-56 font-kolker text-gray-600 md:p-10 md:mt-20  h-auto shadow-lg">
-                                    <label className="md:text-4xl text-3xl pl-4 md: md:pl-16">
+                            <div className="flex md:flex-row flex-col gap-2 ml-2 md:mb-10 md:mt-10 mb-2">
+                                <div className="md:w-2/3 w-56 font-kolker text-gray-600 md:p-10 md:mt-20 pt-10 md:h-auto md:shadow-lg">
+                                    <label className="text-4xl pl-4 md:pl-16">
                                         Tools
                                     </label>
                                 </div>
-                                <div className="w-full font-kolker  text-gray-600 pl-5 mr-2 pt-10 pb-10 md:space-y-4 md:mt-20  h-auto shadow-lg">
+                                <div className="w-full font-kolker  text-gray-600 pl-5 mr-2 md:pt-10 md:pb-10 pb-5 md:space-y-4 md:mt-20  h-auto shadow-lg">
                                     {myTools.map(({ tools, id, level, years }) => (                
                                         <div key={id}>
                                             <div className="flex justify-between">
-                                                <p className="md:text-6xl text-3xl flex">
+                                                <p className="md:text-6xl text-2xl flex">
                                                     {tools}
                                                 </p>
                                             <div className="mt-1 md:mt-2 mr-2 md:mr-2 bg-gray-500 h-5 md:h-10 shadow-xl w-48 md:w-72">
@@ -147,37 +145,37 @@ const Resume = ({...otherProps}) => {
                                     ))}                       
                                 </div>
                             </div>
-                            <div className="flex gap-2 ml-2 md:mb-10 md:mt-10 mb-2">
-                                <div className="md:w-2/3 w-56 font-kolker text-gray-600 md:p-10 py-10 md:mt-20  h-auto shadow-lg">
-                                    <label className="md:text-4xl text-3xl pl-4 md: md:pl-16">
+                            <div className="flex md:flex-row flex-col gap-2 ml-2 md:mb-10 md:mt-10 mb-2">
+                                <div className="md:w-2/3 w-56 font-kolker text-gray-600 md:p-10 md:py-10 md:mt-20 pt-10 md:h-auto md:shadow-lg">
+                                    <label className="text-4xl pl-4 md: md:pl-16">
                                         Education
                                     </label>              
                                 </div>
-                                <div className="w-full font-kolker  text-gray-600 pl-5 mr-2 pt-10 pb-10  md:mt-20 space-y-6 h-auto shadow-lg">
+                                <div className="w-full font-kolker  text-gray-600 pl-5 mr-2 md:pt-10 md:pb-10 pb-5 md:mt-20 space-y-6 h-auto shadow-lg">
                                 {myEducation.map(({ major, id, school, degree }) => (
                                     <div key={id}>
-                                        <p className="md:text-6xl text-3xl">
+                                        <p className="md:text-6xl text-2xl">
                                             {major}
                                         </p>
-                                        <p className="md:text-4xl text-1xl">
+                                        <p className="md:text-6xl text-2xl">
                                             {school}
                                         </p>
-                                        <p className="md:text-4xl text-1xl">
+                                        <p className="md:text-6xl text-2xl">
                                             {degree}
                                         </p>
                                     </div>
                                     ))}          
                                 </div>
                             </div>
-                            <div className="flex gap-2 ml-2 md:mt-5 md:mb-20">
-                                <div className="md:w-2/3 w-56 font-kolker text-gray-600 md:p-10 py-10 md:mt-20  h-auto shadow-lg">
-                                    <label className="md:text-4xl text-3xl pl-4 md: md:pl-16">
+                            <div className="flex md:flex-row flex-col gap-2 ml-2 md:mt-5 md:mb-20">
+                                <div className="md:w-2/3  font-kolker text-gray-600 md:p-10 md:py-10 md:mt-20 pt-10 md:h-auto md:shadow-lg">
+                                    <label className="text-4xl pl-4 md: md:pl-16">
                                         CERTIFICATES
                                     </label>              
                                 </div>
-                                <div className="w-full font-kolker  text-gray-600 pl-5 mr-2 pt-10 pb-10 md:space-y-6 md:mt-20  h-auto shadow-lg">
+                                <div className="w-full font-kolker  text-gray-600 pl-5 mr-2 md:pt-10 md:pb-10 pb-5 md:space-y-6 md:mt-20  h-auto shadow-lg">
                                 {myCertificates.map(({ id, name, pic, url }) => (
-                                    <p key={id} className="md:text-6xl text-3xl">    
+                                    <p key={id} className="md:text-6xl text-2xl">    
                                         <a download={pic} href={url}>
                                             {name}
                                         </a>

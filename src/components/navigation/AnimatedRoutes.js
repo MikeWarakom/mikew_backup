@@ -29,7 +29,7 @@ const AnimatedRoutes = () => {
 
   return ( 
 
-        <div>
+        <div className="flex flex-col">
                   <Navbar/>
                 <AnimatePresence>
                 <Routes location={location} key={location.pathname}>

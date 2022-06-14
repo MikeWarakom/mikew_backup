@@ -40,8 +40,8 @@ const Contacts = ({...otherProps}) => {
               
     return (
         <section>
-            <div className="absolute z-0 pt-56 pb-36 md:w-1/2 flex-wrap">
-                <h2 className="text-xl text-gray-500 font-body flex ml-10">Data Analyst, Web Developer</h2>
+            <div className="md:block hidden absolute z-0 pt-56 pb-36 md:w-1/2 flex-wrap">
+                <h2 className=" text-xl text-gray-500 font-body flex ml-10">Data Analyst, Web Developer</h2>
                 <h1  className="text-6xl md:text-7xl text-gray-600 font-body flex ml-10">I AM MICHAL WARAKOMSKI</h1>
             </div>  
             <div className="z-40 animationSlideInPage flex relative w-full  h-screen md:h-max">
@@ -49,9 +49,9 @@ const Contacts = ({...otherProps}) => {
                     <span className="md:visible pl-5 font-kolker md:text-4xl tracking-tight text-gray-600">Mike</span>
                     <span className="md:visible font-kolker md:text-4xl text-amber">W.</span>
                 </div>
-                <div className=" md:ml-44 bg-amber flex-col shadow-xl h-full md:w-4/5 w-full">
+                <div className=" md:ml-44 bg-amber flex-col shadow-xl h-max md:w-4/5 w-full">
                         <div className="animationLogo w-full">
-                            <h1 className="pl-5 text-gray-400 font-kolker text-8xl flex justify-center pt-2  ">
+                            <h1 className="pl-5 text-gray-400 font-kolker text-6xl md:text-8xl flex justify-center pt-2  ">
                                 CONTACT
                             </h1>
                             <div className="flex justify-center md:mb-5 md:mt-5 mb-2 w-full">
@@ -62,13 +62,13 @@ const Contacts = ({...otherProps}) => {
                                                 Full Name
                                             </span>
                                             <br/>
-                                            <input className="w-72 h-10 mb-2" type="text" name="fullName" required />
+                                            <input className="md:w-72 w-56 h-10 mb-2" type="text" name="fullName" required />
                                             <br/>
                                             <span className="md:text-4xl text-3xl">
                                                 Enter email 
                                             </span>
                                             <br/>
-                                            <input className="w-72 h-10 mb-2" type="text" name="email" required />
+                                            <input className="md:w-72 w-56 h-10 mb-2" type="text" name="email" required />
                                             <br/>
                                         </div>
                                         <div className="md:text-4xl text-3xl">
@@ -76,7 +76,7 @@ const Contacts = ({...otherProps}) => {
                                                 Message
                                             </span>
                                             <br/>
-                                            <textarea className="md:text-2xl w-72 h-32" name="message" required />
+                                            <textarea className="md:text-2xl md:w-72 w-56 h-32" name="message" required />
                                             <br/>
                                             <div className="flex">
                                                 <button className="button hover:text-blue-500 flex">
