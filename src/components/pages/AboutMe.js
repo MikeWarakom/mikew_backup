@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { motion } from "framer-motion";
 import {Link} from 'react-router-dom';
+import { motion } from "framer-motion";
+
 
 const AboutMe = ({...otherProps}) => {
 
@@ -24,12 +25,12 @@ const AboutMe = ({...otherProps}) => {
                     <span className="md:visible pl-5 font-kolker md:text-4xl tracking-tight text-gray-600">Mike</span>
                     <span className="md:visible font-kolker md:text-4xl text-amber">W.</span>
                 </div>
-                <div className=" md:ml-44 bg-amber flex-col shadow-xl h-full md:w-4/5 w-full">
+                <div className=" md:ml-44 bg-amber flex-col shadow-xl h-screen md:w-4/5 w-full">
                         <div className="animationLogo w-full">
                             <label className="pl-5 text-gray-400 font-kolker text-6xl md:text-8xl flex justify-center pt-2  ">
                                 ABOUT ME
                             </label>
-                            <div className="flex gap-2 md:mb-5 md:mt-5 mb-2">
+                            <div className="flex gap-2 mt-10 md:mb-5 md:mt-5 mb-2">
                                 <div className="md:block hidden w-2/3 ml-2 font-kolker text-gray-600 p-10 py-10 md:mt-20 h-auto shadow-lg">
                                 <img className="" src="/img/mw2.png" alt="MW" width="450" ></img>     
                                 </div>

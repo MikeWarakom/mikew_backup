@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = ({...otherProps}) => {
     return (
-        <div className='gap-x-2 flex'>
+        <div className='gap-x-2 flex md:flex-row flex-col md:gap-y-0 gap-y-4'>
             <a href="https://github.com/MikeWarakom">
                 <img src="img/icons/gh.png" width="26" alt="gh" />
             </a>

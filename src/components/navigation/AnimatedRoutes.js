@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './Style.css';
 import { useLocation, Routes, Route  } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 import HomePage from '../pages/HomePage'
 import Navbar from './Navbar';
 import AboutMe from '../pages/AboutMe';
@@ -8,7 +8,8 @@ import Projects from '../pages/Projects';
 import Resume from '../pages/Resume';
 import Contacts from '../pages/Contacts';
 import Footer from './Footer';
-import { AnimatePresence } from 'framer-motion';
+import './Style.css';
+
 
 
 const AnimatedRoutes = () => {

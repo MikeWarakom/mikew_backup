@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.resizing {
+  font-size: calc(15px + 1vw); 
+}
+
 .navbarin {
   animation: nav-load 500ms ease-in;
 }
@@ -16,7 +20,7 @@
 }
 
 .menuUnhide {
-  margin-top: -25vh;
+  margin-top: -20vh;
   margin-left: 50vw;
   transform: scale(0);
   transition: all 0.5s ease-in-out;

@@ -49,13 +49,13 @@ const Contacts = ({...otherProps}) => {
                     <span className="md:visible pl-5 font-kolker md:text-4xl tracking-tight text-gray-600">Mike</span>
                     <span className="md:visible font-kolker md:text-4xl text-amber">W.</span>
                 </div>
-                <div className=" md:ml-44 bg-amber flex-col shadow-xl h-max md:w-4/5 w-full">
+                <div className="h-full md:ml-44 bg-amber flex-col shadow-xl md:w-4/5 w-full">
                         <div className="animationLogo w-full">
                             <h1 className="pl-5 text-gray-400 font-kolker text-6xl md:text-8xl flex justify-center pt-2  ">
                                 CONTACT
                             </h1>
-                            <div className="flex justify-center md:mb-5 md:mt-5 mb-2 w-full">
-                                <div className="flex justify-center w-max font-kolker  text-gray-600  p-10 pb-5 md:space-y-4 md:mt-5 h-auto shadow-lg">
+                            <div className="flex h-full mt-10 justify-center md:mb-5 md:mt-5 mb-2 w-full">
+                                <div className="h-full flex justify-center w-max font-kolker  text-gray-600  p-10 pb-5 md:space-y-4 md:mt-5 m-auto shadow-lg">
                                     <form ref={form} onSubmit={sendEmail}>
                                         <div className="formword">
                                             <span className="md:text-4xl text-3xl">

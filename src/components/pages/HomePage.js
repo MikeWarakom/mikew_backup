@@ -9,7 +9,7 @@ const HomePage = ({...otherProps}) => {
                     <h1  className="animationOpacity text-3xl md:text-7xl text-gray-600 font-body flex ml-10">I AM MICHAL</h1>
                     <h1  className="animationOpacity text-3xl md:text-7xl text-gray-600 font-body flex ml-10 ">WARAKOMSKI</h1>
                 </div>   
-                <div className="md:w-1/2 md:h-screen h-max w-full bg-amber shadow-md">
+                <div className="md:w-1/2 md:h-screen h-max w-screen bg-amber shadow-md">
                     <img className="animationImage md:fixed max-w-xs md:max-w-sm z-0 bottom-0 md:overflow-hidden md:ml-32 ml-1" src="/img/mw.png" alt="MW" ></img>
                 </div>
             </section>

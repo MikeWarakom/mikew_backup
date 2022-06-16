@@ -6,12 +6,11 @@ import { motion } from "framer-motion";
 const Resume = ({...otherProps}) => {
    
     const myWork = [
-        { id: 1, work: "SAMSUNG ELECTRONICS" },
-        { id: 2, work: "LOGISTICS MANAGEMENT" },
-        { id: 3, work: "DATA MODELING, ANALYSIS & REPORTING" },
-        { id: 4, work: "LIVE DASHBOARDS" },
-        { id: 5, work: "DATA AUTOMATIZATION" },
-        { id: 6, work: "SQL SERVER ADMIN" },
+        { id: 1, work: "LOGISTICS MANAGEMENT" },
+        { id: 2, work: "DATA MODELING, ANALYSIS & REPORTING" },
+        { id: 3, work: "LIVE DASHBOARDS" },
+        { id: 4, work: "DATA AUTOMATIZATION" },
+        { id: 5, work: "SQL SERVER ADMIN" },
         
     ];
 
@@ -20,7 +19,7 @@ const Resume = ({...otherProps}) => {
         { id: 2, skills: "SQL", level: 90, years: 2020 },
         { id: 3, skills: "HTML & CSS", level: 80, years: 2021 },
         { id: 4, skills: "JavaScript", level: 80, years: 2021  },
-        { id: 5, skills: "TypeScript", level: 40, years: 2021  },
+        { id: 5, skills: "TypeScript", level: 30, years: 2021  },
         { id: 6, skills: "Python", level: 20, years: 2020}
     ];
 
@@ -117,7 +116,7 @@ const Resume = ({...otherProps}) => {
                                                     {skills}
                                                 </p>
                                             <div className="mt-1 md:mt-2 mr-2 md:mr-2 bg-gray-500 h-5 md:h-10 shadow-xl w-48 md:w-72">
-                                                <div style={barWidth(level)} className="bg-blue-500 text-2xl md:font-medium text-gray-400 text-center md:pt-2 leading-none h-full"> {level}% {experienceYears(years, level)}</div>
+                                                <div style={barWidth(level)} className="bg-blue-500 resizing align-text-bottom md:font-medium text-gray-400 text-center md:pt-2 leading-none h-full"> {level}% {experienceYears(years, level)}</div>
                                                 </div>
                                             </div>                          
                                         </div>
@@ -138,7 +137,7 @@ const Resume = ({...otherProps}) => {
                                                     {tools}
                                                 </p>
                                             <div className="mt-1 md:mt-2 mr-2 md:mr-2 bg-gray-500 h-5 md:h-10 shadow-xl w-48 md:w-72">
-                                                <div style={barWidth(level)}  className="bg-blue-500 text-2xl font-sm md:font-medium text-gray-400 text-center md:p-2 leading-none h-full"> {level}% {experienceYears(years, level)}</div>
+                                                <div style={barWidth(level)}  className="bg-blue-500 resizing md:font-medium text-gray-400 text-center md:p-2 leading-none h-full"> {level}% {experienceYears(years, level)}</div>
                                                 </div>
                                             </div>                          
                                         </div>
