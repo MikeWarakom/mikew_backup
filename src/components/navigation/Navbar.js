@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import './Hamburger.css';
 
 
 const Navbar = () => {
@@ -18,10 +19,12 @@ const Navbar = () => {
                                 <span className="font-kolker text-4xl tracking-tight text-amber">W.</span>
                             </Link>
                         </div>    
-                        <div onClick={onClick} className="flex justify-end px-4 cursor-pointer md:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="gray">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                            </svg>
+                        <div onClick={onClick} className="pr-5 pt-2 flex justify-end cursor-pointer md:hidden">
+                            <div className={`${Active ? 'active' : 'not-active'} object-center z-30 btn`}>
+                                <span className='line'></span>
+                                <span className='line'></span>
+                                <span className='line'></span>
+                            </div>
                         </div>
                         <div className='md:block hidden -mt-1'>
                             <Link to='/aboutme'>
